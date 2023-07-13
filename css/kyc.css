@@ -1,0 +1,376 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.phoneview {
+    display: none;
+
+}
+
+.navv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navv {
+        display: none !important;
+    }
+
+    .phoneview {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home1 {
+        width: 100%;
+        height: 350px;
+    }
+
+    .background {
+        text-align: center;
+        background-color: #f3ead4;
+        padding: 70px 0px 0px 0px;
+    }
+
+    .eas {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 1px 0px 27px;
+        background-color: #ffffff;
+        width: 90%;
+        text-align: center;
+        margin: 0px 10px;
+    }
+
+    .small {
+        width: 11px;
+        height: 7px;
+        padding: 7px 3px;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 15px 0px;
+    }
+
+    .search {
+        padding: 5px 10px;
+    }
+
+    .madu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0px 150px; */
+        font-size: 16px;
+        /* width: 100%; */
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        padding-top: 10px;
+        outline: none;
+        font-size: 17px;
+        width: 550px;
+        padding: 0px 10px;
+    }
+
+    /* .linee {
+        width: 2px;
+        height: 100%;
+        background-color: #eeeeee;
+        margin: 0px 0px 0px 18px;
+    } */
+
+    .line1 {
+        width: 100%;
+        height: 2px;
+        background-color: #eeeeee;
+        margin-top: 15px;
+    }
+
+}
+
+.login1 {
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 6px 20px;
+    background-color: transparent;
+    cursor: pointer;
+
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: none !important;
+    }
+} */
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.top {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+#border1 {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    border-radius: 12px;
+    padding: 20px !important;
+    background-color: #ffffff;
+    width: 60%;
+    line-height: 2rem;
+}
+
+#page {
+    background-color: #f9f9f9;
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    height: 60px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    color: #999999;
+}
+
+form {
+    text-align: end;
+}
+
+.button {
+    background-color: transparent;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    border: none;
+    border-radius: 5px !important;
+    font-weight: 500;
+    color: #772360;
+    border: 1px dotted #772360;
+    padding: 15px 40px;
+    margin: 10px 0px;
+}
+
+#btn {
+    background-color: #772360;
+    color: white;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px !important;
+    font-weight: 500;
+
+}
+
+#bor {
+    border: 1px dotted black;
+    margin: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #bor {
+        border: 1px dotted black;
+        margin: 3px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #bor {
+        border: 1px dotted black;
+        margin: 3px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+#bor:hover {
+    border: 1px dotted #3fb575;
+    color: #3fb575;
+    cursor: pointer;
+}
+
+.pb-5 {
+    padding-bottom: 12rem !important;
+}
+
+.para {
+    color: #772360;
+    background-color: transparent;
+    border: 1px dotted #772360;
+    padding: 10px 50px;
+}
+
+.para1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.container1 {
+    height: 88vh;
+}
+
+.input-group {
+    width: 100% !important;
+    margin: 0px 20px;
+}
+
+.inputt {
+    display: flex;
+
+}
+
+
+
+.point {
+    margin-bottom: 0rem !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.inputt {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.iii {
+    width: 100%;
+
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #dcb966;
+    outline: none;
+    margin-left: 10px;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    margin: 0px 9px;
+    outline: none;
+    font-weight: bold;
+}
+
+.inputt {
+    background-color: #fffdf7;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 2px solid #f6e8c6;
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.radio1 {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+label{
+    margin: 0px 5px;
+}
+
+.topall {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.all {
+   
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    border-radius: 12px;
+    padding: 20px !important;
+    background-color: #ffffff;
+    width: 80%;
+    line-height: 2rem;
+}
+
+.disp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.point {
+    margin: 0px 40px 0px 0px;
+    cursor: pointer;
+}
+
+.madu p {
+    margin-bottom: 0rem !important;
+}
+
+.searchb {
+    color: white;
+    border-radius: 50%;
+    background-color: #772360;
+    padding: 6px;
+}

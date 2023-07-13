@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outflow</title>
+    <link rel="stylesheet" href="./css/outflow.css">
+    <script src="./js/outflow.js"></script>
+</head>
+
+<body>
+    <div class="cointainer">
+        <nav>
+            <div class="navv">
+                <a href="index.html"> <img src="./image/logo.png"></a>
+                <div class="inputt">
+                    <img src="./image/place_black_24dp.png">
+                    <select>
+                        <option>Madurai</option>
+                    </select>
+                    <!-- </div>
+            <div> -->
+                    <input type="text" placeholder="Search" class="iii">
+                    <!-- </div>
+            <div> -->
+                    <div class="radio">
+                        <input type="radio" name="select">
+                        <label>Rent</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="select">
+                        <label>Buy</label>
+                    </div>
+                    <img src="./image/search-black-24-dp.png">
+                </div>
+
+                <div class="disp">
+                    <div class="p">
+                        <p class="point">Tenants</p>
+                    </div>
+
+                    <div class="p">
+                        <p class="point">Owners</p>
+                    </div>
+                </div>
+
+
+                <div class="disp1">
+                    <a href="loginpage.html"><img src="./image/profile_icon.png"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="header">
+        <div class="right">
+            <h2>Dashboard</h2>
+
+            <div class="flex">
+                <!-- <div class="color"> -->
+                <div class="tab">
+                    <img src="./image/hand-key-copy-3.png">
+                    <button onclick="openCity('property')">Property</button>
+                </div>
+                <!-- </div> -->
+                <hr>
+
+                <div class="tab">
+                    <img src="./image/$.png">
+                    <button onclick="openCity('Inflow')">Inflow</button>
+                </div>
+                <hr>
+
+                <div class="tab">
+                    <img src="./image/calc.png">
+                    <button onclick="openCity('outflow')">Outflow</button>
+                </div>
+                <hr>
+
+                <div class="tab">
+                    <img src="./image/asset-loan-money-pawnshop-currency-icon-copy.png">
+                    <button onclick="openCity('Loan')">Loan</button>
+                </div>
+                <hr>
+
+
+
+            </div>
+        </div>
+
+        <div class="left">
+
+            <!-- property -->
+
+            <div id="property" class="w3-container city" style="display:none">
+                <h2>Property</h2>
+                <hr class="line">
+
+                <div class="cbtn">
+                    <button id="btn1" class="point" onclick="openCitys('All')">All</button>
+                    <button id="btn1" class="point" onclick="openCitys('Rent')">Rent</button>
+                    <button id="btn1" class="point" onclick="openCitys('Available')">Available</button>
+                </div>
+
+
+                <div id="All" class="w3-container state">
+                    <div class="topall">
+
+                        <div class="pro">
+                            <div class="pro1">
+                                <p class="bold">AK Apartment</p>
+                                <p class="bold" style="color: #772260;">₹20,000</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p class="add">250 ARK Street, Bypass Road, Madurai.</p>
+                                <p class="add">Dec 02, 2021</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p>Vinoth</p>
+                                <p class="boxx"> Agreement Review</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p class="view">View Detail</p>
+                                <p style="color: #eb5758;">Waiting for Approval</p>
+                            </div>
+                        </div>
+
+                        <div class="apa">
+                            <div class="pro1">
+                                <p style="font-weight: bold;">KFM Apartment</p>
+                                <p style="color: #772260;font-weight: bold;">₹15,000</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p class="add">T81 Nilla Street, Anna Nagar, Madurai.</p>
+                                <p class="add">Dec 12,2021</p>
+
+                            </div>
+
+                            <div class="pro11">
+                                <p class="apap">
+                                    Add Tenant</p>
+                            </div>
+
+                        </div>
+
+                        <div class="pro">
+                            <div class="pro1">
+                                <p style="font-weight: bold;">Rahul Villa</p>
+                                <p style="color: #772260;font-weight: bold;">₹18,000</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p class="add">102 KRG Street, Mullai Nagar, Madurai.</p>
+                                <p class="add">Jun 10, 2021</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p>Sharma</p>
+                                <p class="boxx"> Agreement Accepted</p>
+                            </div>
+
+                            <div class="pro1">
+                                <p class="view">View Detail</p>
+                                <p style="color: #44b779;">Tenant Agreed</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="Rent" class="w3-container state" style="display:none">
+                    <div class="done">
+                        <p class="bold">Rent</p>
+                    </div>
+                </div>
+
+                <div id="Available" class="w3-container state" style="display:none">
+                    <div class="done">
+                        <p class="bold">Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- inflow -->
+
+            <div id="Inflow" class="w3-container city" style="display:none;">
+                <h2>Inflow</h2>
+                <hr class="line">
+
+
+                <div class="topall1">
+                    <div class="gap">
+                        <div class="pro1">
+                            <p class="bold">AK Apartment<br>Madurai
+                            </p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Advance</p>
+                            <p class="bold">₹ 80,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Maintenance</p>
+                            <p class="bold">₹ 1,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">EB</p>
+                            <p class="bold">₹ 1,500</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Feb 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Rent</p>
+                            <p class="bold">₹ 8,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Jan 05, 2022</span></p>
+                        </div>
+
+                    </div>
+
+                    <div class="gap">
+                        <div class="pro1">
+                            <p class="bold">Rahul Villa<br>Madurai
+                            </p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Advance</p>
+                            <p class="bold">₹ 70,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Maintenance</p>
+                            <p class="bold">₹ 1,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">EB</p>
+                            <p class="bold">₹ 1,800</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Rent</p>
+                            <p class="bold">₹ 7,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 05, 2021</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- outflow -->
+
+            <div id="outflow" class="w3-container city" style="display:none;">
+                <h2>Outflow</h2>
+                <hr class="line">
+
+                <div class="topall1">
+                    <div class="gap">
+                        <div class="pro1">
+                            <p class="bold">AK Apartment<br>Madurai
+                            </p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Advance</p>
+                            <p class="bold">₹ 80,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Maintenance</p>
+                            <p class="bold">₹ 1,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">EB</p>
+                            <p class="bold">₹ 1,500</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Feb 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Rent</p>
+                            <p class="bold">₹ 8,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Jan 05, 2022</span></p>
+                        </div>
+
+                    </div>
+
+                    <div class="gap">
+                        <div class="pro1">
+                            <p class="bold">Rahul Villa<br>Madurai
+                            </p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Advance</p>
+                            <p class="bold">₹ 70,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Maintenance</p>
+                            <p class="bold">₹ 1,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">EB</p>
+                            <p class="bold">₹ 1,800</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="bold">Rent</p>
+                            <p class="bold">₹ 7,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Due on <span style="color: #eb5758;">Dec 05, 2021</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- loan -->
+
+            <div id="Loan" class="w3-container city" style="display:none">
+                <h2>Loan</h2>
+
+                <hr class="line">
+                <div class="to">
+                    <P class="back">Open</P>
+                    <P class="cl">Closed</P>
+                </div>
+                <div class="topall">
+                    <div class="inflow">
+                        <div class="pro1">
+                            <p class="bold">Rahul Villa</p>
+                            <p class="bold" style="color: #772260;">₹20,000</p>
+
+                        </div>
+                        <div class="pro1">
+                            <p class="add">Start Date Jun 26, 2021</p>
+                            <p class="add">Due Date Feb 26, 2022</p>
+
+                        </div>
+
+                        <div>
+                            <p class="bold">Sharma</p>
+                            <p style="color: #666666;padding-top: 10px;" class="add">Ac/no: 343543</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="view">View Detail</p>
+                            <button class="pay" onclick="openCity('pay')">Pay</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="inflow">
+                        <div class="pro1">
+                            <p class="bold">KS Dream House</p>
+                            <p style="color: #772260;" class='bold'>₹60,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Start Date Jun 26, 2021</p>
+                            <p class="add">Due Date Feb 26, 2022</p>
+                        </div>
+
+                        <div>
+                            <p class="bold">Renu</p>
+                            <p style="color: #666666;padding-top: 10px;" class="add">Ac/no: 254863</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="view">View Detail</p>
+                            <button class="pay" onclick="openCity('pay')">Pay</button>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="inflow">
+                        <div class="pro1">
+                            <p class="bold">AK Apartment</p>
+                            <p style="color: #772260;" class='bold'>₹20,000</p>
+                        </div>
+
+                        <div class="pro1">
+                            <p class="add">Start Date Jul 05, 2021</p>
+                            <p class="add">Due Date Apr 15, 2022</p>
+                        </div>
+
+                        <div>
+                            <p class="bold">Vinoth</p>
+                            <p style="color: #666666;padding-top: 10px;" class="add">Ac/no: 985622</p>
+                        </div>
+                        <div class="pro1">
+                            <p class="view">View Detail</p>
+                            <button class="pay" onclick="openCity('pay')">Pay</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+      
+    </div>
+
+      <!-- pay card  -->
+
+      <div id="pay" class="w3-container state" style="display:none">
+
+        <p style="font-weight: bold;
+display: flex;
+align-items: center;
+height: 70vh;
+justify-content: center;"> pay card </p>
+    </div>
+
+    <!-- paycard  -->
+
+    </div>
+
+</body>
+
+</html>

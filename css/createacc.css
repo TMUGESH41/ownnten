@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    /* background-color: beige; */
+    width: 62%;
+}
+
+.header {
+    background-color: beige;
+    width: 62%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+@media (max-width: 768px)  {
+    .header {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header {
+        display: none;
+    }
+}
+
+.topic {
+    /* position: absolute; */
+    /* left: 18%;
+    top: 40px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32vh;
+}
+
+.topic h1 {
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media (max-width: 768px)  {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: beige;
+        height: 100vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: beige;
+        height: 100vh;
+    }
+}
+
+.login {
+    padding-top: 25px;
+}
+
+.login h1 {
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 300px;
+    background-color: transparent;
+}
+
+.a {
+    text-align: center;
+    background-color: #772360;
+    border-radius: 35px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 15px 129px;
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+
+
+form {
+    padding-top: 20%;
+    line-height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.last {
+    line-height: 3rem;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    color: #999999
+}
+
+.lo {
+    color: #772360;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.re {
+    position: relative;
+}
+
+.ab {
+    position: absolute;
+    right: 1%;
+}
+
+@media (max-width: 768px)  {
+    .ab {
+        position: absolute;
+        right: 25%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .ab {
+        position: absolute;
+        right: 33%;
+    }
+}

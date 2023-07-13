@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    padding: 40px 0px 0px 30px;
+    background-color: beige;
+    height: 23px;
+    width: 101px;
+    /* padding: 10px 10px; */
+}
+
+nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+
+
+    .go {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .go {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .go {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* .left {
+        line-height: 40px;
+        padding: 100px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        text-align: left;
+    } */
+}
+
+.container {
+    background-color: white;
+    position: relative;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-color: beige;
+        position: relative;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        background-color: beige;
+        position: relative;
+        height: 100vh;
+    }
+}
+
+.log .img {
+    /* position: relative; */
+    padding-top: 62px;
+    width: 100%;
+    display: flex;
+    /* height: 100vh; */
+}
+
+.go {
+    width: 50%;
+    background-color: beige;
+    height: 100vh;
+}
+
+.log {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .log {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .log {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.left {
+    line-height: 40px;
+    padding: 51px 221px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    width: 22%;
+}
+
+@media (max-width: 768px) {
+    .left {
+        line-height: 40px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: left;
+        height: 100vh;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .left {
+        line-height: 40px;
+        padding: 60px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: left;
+        height: 70vh;
+        width: 40%;
+    }
+}
+
+
+form {
+    padding-top: 40px;
+    font-size: 15PX;
+    color: #999999;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #8b8585;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+}
+
+.pp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp a {
+    color: black;
+    /* text-decoration: none; */
+}
+
+button {
+
+    width: 200px;
+    padding-left: 5px;
+    background-color: #772360;
+    border-radius: 20px;
+    height: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+    /* line-height: 7rem; */
+    border: none;
+}
+
+.butt {
+    background-color: #772360;
+    border-radius: 33px;
+    /* height: 50px; */
+    padding: 6px;
+    width: 105px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .butt {
+        background-color: #772360;
+        border-radius: 33px;
+        /* height: 50px; */
+        padding: 6px 2px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+        flex-direction: column;
+        /* line-height: 7rem; */
+        border: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .butt {
+        background-color: #772360;
+        border-radius: 33px;
+        /* height: 50px; */
+        padding: 6px 2px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+        flex-direction: column;
+        /* line-height: 7rem; */
+        border: none;
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.lo {
+    color: #772360;
+}
+
+.aa {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .go {
+        display: none;
+        /* display: flex; */
+        justify-content: center;
+    }
+
+    .aa {
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+
+
+.pass {
+    position: relative;
+}
+
+.eye {
+   display: none;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .eye {
+        position: absolute;
+        right: 29%;
+        bottom: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .eye {
+        position: absolute;
+        right: 29%;
+        bottom: 45%;
+    }
+}
+
+.button p{
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .button p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .button p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+}
