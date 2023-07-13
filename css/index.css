@@ -31,7 +31,7 @@ a {
 }
 
 .space {
-    margin: 0px 5px;
+    margin: 0px 15px;
 
     text-decoration: none;
     font-size: 17px;
@@ -52,7 +52,7 @@ a {
     padding: 10px 20px;
     background-color: transparent;
     cursor: pointer;
-
+    /* height: 45px; */
     text-align: center;
     font-weight: 300;
     text-decoration: none;
@@ -100,6 +100,7 @@ a {
     outline: none;
     display: flex;
 }
+
 
 .select img {
     width: 11px;
@@ -968,3 +969,4 @@ footer {
         width: 100%;
     }
 }
+
