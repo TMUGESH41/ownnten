@@ -52,7 +52,7 @@ a {
     padding: 10px 20px;
     background-color: transparent;
     cursor: pointer;
-    /* height: 45px; */
+
     text-align: center;
     font-weight: 300;
     text-decoration: none;
@@ -96,7 +96,6 @@ a {
 .select {
     background-color: transparent;
     border: none;
-    /* padding-top: 10px; */
     font-size: 17px;
     outline: none;
     display: flex;
@@ -295,7 +294,7 @@ P {
     background-color: #ffffff;
 }
 
-.nav img{
+.nav img {
     margin-right: 10px;
 }
 
@@ -392,7 +391,7 @@ P {
         padding: 0px 10px;
     }
 
-   
+
 
     .line1 {
         width: 100%;
