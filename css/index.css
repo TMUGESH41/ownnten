@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #772360 !important;
+    color: #FFF;
+    text-decoration: none;
+}
+
 .container {
     background-color: #f3ead4;
     height: 74vh;
@@ -75,17 +81,21 @@ a {
     position: absolute;
     left: 17%;
     top: 14%;
-    font-family: 'Poppins', sans-serif;
-    line-height: 60px;
+
+    line-height: 1.5;
+
 }
 
 .para h1 {
     font-weight: 500;
     text-align: left;
+
 }
 
 .para h4 {
     text-align: left;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .img {
@@ -117,7 +127,7 @@ option {
     padding-top: 10px;
     outline: none;
     font-size: 20px;
-    width: 420px;
+    width: 93%;
     padding: 0px 10px;
 }
 
@@ -145,22 +155,24 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 5px;
 }
 
 .content3 {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 67%;
     align-items: center;
     position: absolute;
-    left: 14%;
+    left: 16%;
     top: 68%;
     border: none;
     border-radius: 50px;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     /* border: 1px solid black; */
     margin: 10px;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.04);
 }
 
 /* h6 {
@@ -464,6 +476,7 @@ P {
         /* padding: 0px 150px; */
         font-size: 16px;
         width: 100%;
+        margin: 15px 0px;
     }
 
     input {
@@ -524,9 +537,6 @@ P {
 
     }
 
-    .content4 {
-        width: 77%;
-    }
 }
 
 .sizee {
@@ -724,12 +734,11 @@ P {
     line-height: 2rem;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 68%;
+    padding: 0px 0px 0px 20px;
 }
 
-.gap {
-    margin: 0px 20px;
-}
+
 
 .in {
     display: flex;
@@ -774,7 +783,7 @@ footer {
 .lastt {
     display: flex;
     padding: 10px;
-    width: 80%;
+    width: 77%;
     justify-content: space-between;
 }
 
@@ -805,6 +814,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  
     .content5 {
         margin-bottom: 7rem;
 
@@ -868,7 +879,7 @@ footer {
         line-height: 2rem;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 95%;
     }
 
     .ga {
@@ -966,7 +977,18 @@ footer {
         line-height: 2rem;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 95%;
     }
-}
 
+    
+    .content4 {
+        display: flex;
+        justify-content: center;
+        margin: 45px;
+        text-align: center;
+        padding: 69px 9px 24px 100px;
+        width: 70%;
+    }
+
+   
+}

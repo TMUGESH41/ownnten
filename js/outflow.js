@@ -26,3 +26,13 @@ function openCitys(cityName) {
         document.getElementById(cityName).style.display = "block";
 }
 
+
+function openbox(cityName) {
+    var i;
+    var x = document.getElementsByClassName("addall");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+

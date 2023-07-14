@@ -7,34 +7,25 @@
     width: 100%;
 }
 
-.img img{
+.img img {
     position: absolute;
     bottom: 0%;
     left: 0%;
     /* background-color: beige; */
-    width: 62%;
+    width: 50%;
+    height: 70vh;
 }
 
 .header {
-    background-color: beige;
-    width: 62%;
+    background-color: #f3ead4;
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-@media (max-width: 768px)  {
-    .header {
-        display: none;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .header {
-        display: none;
-    }
-}
 
 .topic {
     /* position: absolute; */
@@ -49,40 +40,41 @@
 
 .topic h1 {
     font-weight: 100;
-    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
 }
 
 .container {
-    width: 80%;
+
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-@media (max-width: 768px)  {
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: beige;
-        height: 100vh;
-    }
 
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: beige;
-        height: 100vh;
-    }
-}
 
 .login {
-    padding-top: 25px;
+    padding-top: 50px;
+    width: 43%;
 }
+
+.ac {
+    background-color: #772360;
+    border-radius: 35px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 0px 40%;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 .login h1 {
     font-weight: 100;
@@ -94,41 +86,35 @@
     outline: none;
     padding: 10px;
     border-bottom: 1px solid black;
-    width: 330px;
+    width: 65%;
     background-color: transparent;
 }
 
-.a {
-    text-align: center;
-    background-color: #772360;
-    border-radius: 35px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    padding: 15px 129px;
-    text-decoration: none;
-    width: 100%;
-    
+
+
+.last p {
+    font-size: 14px;
+    color: #666666;
 }
 
 
-
 form {
-    padding-top: 20%;
+    padding-top: 5%;
     line-height: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
 .last {
     line-height: 3rem;
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    width: 70%;
 }
 
 label {
-    color: #999999
+    color: #999999;
+    font-size: 13px;
 }
 
 .lo {
@@ -143,10 +129,10 @@ label {
 
 .ab {
     position: absolute;
-    right: 1%;
+    right: 14%;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .ab {
         position: absolute;
         right: 25%;
@@ -158,5 +144,119 @@ label {
     .ab {
         position: absolute;
         right: 33%;
+    }
+
+    .ac {
+        background-color: #772360;
+        border-radius: 35px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        padding: 0px 0px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: beige;
+        height: 100vh;
+    }
+
+    .login {
+        padding-top: 50px;
+        width: 60%;
+    }
+
+    .login input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        width: 80%;
+        background-color: transparent;
+    }
+
+    .ac {
+        background-color: #772360;
+        border-radius: 35px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        padding: 0px 129px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: beige;
+        height: 100vh;
+    }
+
+    .last {
+        line-height: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        width: 95%;
+    }
+
+    .ac {
+        background-color: #772360;
+        border-radius: 35px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        padding: 0px 0px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .login {
+        padding-top: 50px;
+        width: 60%;
+    }
+
+    .login input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        width: 90%;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header {
+        display: none;
+    }
+
+    .last {
+        line-height: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        width: 85%;
     }
 }

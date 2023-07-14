@@ -10,12 +10,17 @@
     padding: 6px;
 }
 
+.radio1 label{
+    margin: 0px 5px;
+}
+
 .navv {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .inputt {

@@ -7,10 +7,20 @@ body {
     background-color: #f0f0f0;
 }
 
+.topall {
+    display: flex;
+    /* justify-content: center; */
+    width: 85%;
+}
+
 nav input {
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+.radio label {
+    margin: 0px 5px;
 }
 
 select {
@@ -395,19 +405,10 @@ hr {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    text-align: end;
 }
 
-@media only screen and (max-width: 768px) {
 
-    .apa {
-        margin: 45px 0px 11px 0px;
-        width: 80%;
-        box-shadow: 0px 0px 2px 0px;
-        padding: 20px 30px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .apa {
@@ -439,9 +440,7 @@ hr {
     /* Styles for tablets */
 }
 
-.topall {
-    display: flex;
-}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -646,23 +645,33 @@ hr {
 .apap {
     width: 25%;
     text-align: center;
-
     background-color: #772260;
     color: white;
-    padding: 3px 11px;
-    border-radius: 20px;
+    padding: 5px 11px;
+    border-radius: 6px;
     font-size: smaller;
+    text-decoration: none;
+}
+
+.apa {
+    text-align: end;
+    margin: 40px 25px 20px 25px;
+    width: 32%;
+    box-shadow: 0px 0px 2px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* text-decoration: none; */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .apap {
         width: 41%;
         text-align: end;
-
         background-color: #772260;
         color: white;
-        padding: 3px 11px;
-        border-radius: 20px;
+        padding: 7px 11px;
+        border-radius: 6px;
         font-size: smaller;
     }
 }
@@ -681,6 +690,7 @@ hr {
         justify-content: inherit;
         line-height: 25px;
     }
+
     .disp1 {
         display: none;
     }
@@ -707,23 +717,13 @@ hr {
 .boxx {
     background-color: #772260;
     color: white;
-    padding: 3px 11px;
-    border-radius: 20px;
+    padding: 6px 11px;
+    border-radius: 6px;
     font-size: smaller;
     text-align: center;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .boxx {
-        background-color: #772260;
-        color: white;
-        padding: 3px 11px;
-        border-radius: 20px;
-        font-size: smaller;
-        width: 42%;
-        text-align: center;
-    }
-}
+
 
 .topall1 {
     display: flex;
@@ -754,50 +754,7 @@ button {
     outline: none;
 }
 
-/* 
-.card{
-    width: 30%;
-    color: white;
-}
 
-.img{
-    position:relative
-}
-
-.paste {
-    position: absolute;
-    top: 26%;
-    left: 3%;
-    width: 20%;
-}
-
-.card1{
-    display: flex;
-    flex-direction: column;
-}
-
-.all{
-    display: flex;
-}
-
-.dis {
-    display: flex;
-    justify-content: space-between;
-    width: 113%;
-}
-
-.card2{
-    line-height: 0px;
-    margin: 35px;
-}
-
-.red{
-    color: red;
-}
-
-.green{
-    color: green;
-} */
 
 .all {
 
@@ -827,22 +784,49 @@ button {
         border: 1px solid black;
     }
 }
-#outflow{
+
+#outflow {
     width: 100%;
 }
+
 @media only screen and (max-width: 768px) {
 
-    #outflow{
+    #outflow {
         width: 80%;
     }
 }
 
-#Inflow{
+#Inflow {
     width: 100%;
 }
+
 @media only screen and (max-width: 768px) {
 
-    #Inflow{
+    #Inflow {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .apa {
+        margin: 45px 0px 11px 0px;
+        width: 80%;
+        box-shadow: 0px 0px 2px 0px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .boxx {
+        background-color: #772260;
+        color: white;
+        padding: 3px 10px;
+        border-radius: 6px;
+        font-size: smaller;
+        width: 42%;
+        text-align: center;
     }
 }
