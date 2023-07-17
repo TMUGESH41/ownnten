@@ -65,6 +65,17 @@ nav {
 
 }
 
+.h1{
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.h12{
+    font-weight: 100;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .container {
     background-color: white;
     position: relative;
@@ -76,6 +87,17 @@ nav {
         background-color: #f2ebdc;
         position: relative;
         height: 100vh;
+    }
+
+    .h1{
+        font-weight: 100;
+        font-size: 24px;
+    }
+
+    .h12{
+        font-weight: 100;
+        font-size: 24px;
+        font-weight: bold;
     }
 }
 
