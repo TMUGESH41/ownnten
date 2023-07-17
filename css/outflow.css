@@ -10,7 +10,7 @@ body {
 .topall {
     display: flex;
     /* justify-content: center; */
-    width: 85%;
+    width: 100%;
 }
 
 nav input {
@@ -26,7 +26,7 @@ nav input {
 select {
     background-color: transparent;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
     margin: 0px 9px;
     outline: none;
 }
@@ -36,8 +36,8 @@ option {
 }
 
 hr {
-    width: 113%;
-    margin: 0px -21px;
+    width: 100%;
+    margin: 0px 0px;
 }
 
 .iii {
@@ -70,10 +70,38 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     hr {
-        width: 120%;
-        margin: 0px -21px;
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .navv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px 30px;
+        font-family: 'Poppins', sans-serif;
+        flex-direction: column;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .tab {
+        /* background-color: #6e6e6e; */
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid black;
     }
 }
 
@@ -82,7 +110,7 @@ hr {
 .inputt {
     background-color: #fffdf7;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 40px;
     border: 2px solid #f6e8c6;
     margin: 10px;
     width: 50%;
@@ -104,21 +132,40 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .inputt {
+        background-color: #fffdf7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: 2px solid #f6e8c6;
+        margin: 10px;
+        width: 85%;
+        display: flex;
+        align-items: center;
+    }
 }
 
-@media only screen and (min-width: 1025px) {
-    /* Styles for laptops and desktops */
-}
+
 
 .tab {
     display: flex;
-    margin: 10px;
+
     color: #6e6e6e;
-    padding-top: 20px;
+
     align-items: center;
 }
+
+.right h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 30px;
+}
+
+.left h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 @media only screen and (max-width: 768px) {
     .tab {
@@ -132,18 +179,23 @@ hr {
 
 }
 
-/* .tab:hover{
-    background-color: #6e6e6e;
-    padding-left: 50%;
-} */
+
+
+
 
 .tab button {
     border: none;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 182px 10px 8px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+
+.tab button:hover {
+
+    color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -164,7 +216,7 @@ hr {
     background-color: white;
     margin: 10px 10px 10px 50px;
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 30px 0px;
     width: 20%;
     height: 540px;
     font-family: 'Poppins', sans-serif;
@@ -177,12 +229,12 @@ hr {
     .right {
         /* display: flex; */
         /* flex-direction: column; */
-        background-color: white;
+        /* background-color: white; */
         margin: 10px 10px;
         border-radius: 10px;
         padding: 3px 10px;
         width: 95%;
-        height: 119px;
+        height: 150px;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -196,11 +248,27 @@ hr {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
 
 
+    .tab button {
+        border: none;
+        background-color: transparent;
+        padding: 10px 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
-
+    .apa {
+        margin: 45px 0px 11px 0px;
+        width: 97%;
+        box-shadow: 0px 0px 2px 0px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
 
 .header {
     display: flex;
@@ -219,13 +287,17 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-@media only screen and (min-width: 1025px) {
-    /* Styles for laptops and desktops */
-}
+
 
 .calader {
     display: flex;
@@ -247,7 +319,6 @@ hr {
     display: flex;
 }
 
-
 @media only screen and (max-width: 768px) {
     .radio {
         display: none;
@@ -255,8 +326,10 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .radio {
+        display: none;
+    }
 }
 
 
@@ -274,8 +347,8 @@ hr {
     padding: 10px;
     border-radius: 10px;
     padding: 30px;
-    margin: 10px 40px 10px 10px;
-    width: 64%;
+    margin: 11px 64px 10px 10px;
+    width: 65%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -285,7 +358,7 @@ hr {
         padding: 10px;
         border-radius: 10px;
         padding: 10px;
-        /* margin: 47px; */
+        margin: 11px 0px 10px 10px;
         width: 80%;
         font-family: 'Poppins', sans-serif;
         display: flex;
@@ -315,11 +388,8 @@ hr {
     margin: 22px 13px 35px 0px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .topall {
-        display: flex;
-        width: 85%;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {
+
 
 
     .p {
@@ -345,12 +415,13 @@ hr {
 .pro {
     box-shadow: 0px 0px 2px 0px;
     margin-top: 38px;
-    padding: 6px 19px;
-    width: 30%;
+    padding: 6px 10px;
+    width: 28%;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    line-height: 15px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -368,9 +439,19 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
     .pro {
-        font-size: smaller;
+        box-shadow: 0px 0px 2px 0px;
+        margin-top: 38px;
+        padding: 6px 10px;
+        width: 28%;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        line-height: 15px;
     }
 }
 
@@ -381,9 +462,10 @@ hr {
     justify-content: space-between;
     width: 100%;
     margin: 10px 0px;
+
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .pro1 {
         display: flex;
         justify-content: space-between;
@@ -398,6 +480,14 @@ hr {
 
 }
 
+.add1 {
+    font-size: 11px;
+    width: max-content;
+    color: #666666;
+}
+
+
+
 .apa {
     margin: 40px 25px 20px 25px;
     width: 32%;
@@ -410,7 +500,7 @@ hr {
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .apa {
         margin: 40px 25px 20px 25px;
         width: 32%;
@@ -432,13 +522,11 @@ hr {
     .cbtn {
         display: flex;
         justify-content: center;
-        width: 107%;
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for tablets */
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 
 
@@ -447,19 +535,15 @@ hr {
     .topall {
         display: flex;
         flex-direction: column;
-        width: 113%;
+        width: 100%;
         justify-content: center;
     }
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
-
-
-
-
 .bold {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .inflow {
@@ -489,7 +573,7 @@ hr {
     h2 {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         margin: 10px;
     }
 
@@ -502,7 +586,7 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .inflow {
         box-shadow: 0px 0px 2px 0px;
         margin: 10px 8px;
@@ -524,56 +608,59 @@ hr {
 .pay {
     background-color: #772260;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     border: none;
 }
 
 .back {
-    background-color: #772260;
+    color: black;
+    background-color: #f8f8f8;
     padding: 6px 16px;
-    color: white;
-    border-radius: 30px;
+
+    border-radius: 5px;
     /* text-align: left; */
     /* height: 0px; */
-    margin: 13px 0px;
+    margin: 13px 3px;
     cursor: pointer;
 }
 
-.cl {
-    margin: 9px 0px;
-    color: #6e6e6e;
-    background-color: #f8f8f8;
-    padding: 10px 13px;
-    border-radius: 16px;
-    cursor: pointer;
+.back:hover {
+    background-color: #772260;
+    color: white;
 }
 
 .to {
     display: flex;
     margin-bottom: 20px;
     justify-content: end;
+    align-items: center;
 }
 
 .view {
     cursor: pointer;
     color: #772360;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .point {
     cursor: pointer;
     font-weight: bold;
-    padding: 0px 40px 0px 0px;
+    padding: 0px 30px 0px 0px;
 }
 
 #btn1 {
-
     padding: 10px 24px;
     margin: 0px 13px;
-    border-radius: 20px;
+    border-radius: 7px;
     border: none;
     font-weight: bold;
+    font-size: 12px;
+    font-weight: 500;
+    color:
+        #f0f #6e6e6e;
 }
 
 #btn1:hover {
@@ -582,7 +669,7 @@ hr {
 }
 
 .gap {
-    padding: 10px 22px;
+
     border: 20px;
     display: flex;
     flex-direction: column;
@@ -607,16 +694,31 @@ hr {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .gap {
         padding: 10px 22px;
         border: 20px;
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 51%;
         box-shadow: 0px 0px 2px 0px;
         margin: 10px 17px;
         border-radius: 10px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 10px;
+    }
+
+    #property {
+        width: 60%;
+    }
+
+    #Loan {
+        width: 60%;
     }
 }
 
@@ -640,6 +742,13 @@ hr {
         padding: 39px 7px 10px 33px;
     }
 
+    #Loan {
+        width: 80%;
+    }
+
+    #property {
+        width: 80%;
+    }
 }
 
 .apap {
@@ -647,16 +756,17 @@ hr {
     text-align: center;
     background-color: #772260;
     color: white;
-    padding: 5px 11px;
+    padding: 6px 11px;
     border-radius: 6px;
-    font-size: smaller;
+    font-size: 11px;
+    font-weight: 500;
     text-decoration: none;
 }
 
 .apa {
     text-align: end;
     margin: 40px 25px 20px 25px;
-    width: 32%;
+    width: 30%;
     box-shadow: 0px 0px 2px 0px;
     padding: 10px;
     border-radius: 10px;
@@ -664,7 +774,7 @@ hr {
     /* text-decoration: none; */
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .apap {
         width: 41%;
         text-align: end;
@@ -678,8 +788,9 @@ hr {
 
 .disp {
     display: flex;
-    width: 10%;
-    justify-content: inherit;
+    width: 15%;
+    justify-content: end;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -696,7 +807,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .disp {
         display: flex;
         width: 30%;
@@ -719,8 +830,9 @@ hr {
     color: white;
     padding: 6px 11px;
     border-radius: 6px;
-    font-size: smaller;
     text-align: center;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 
@@ -742,11 +854,13 @@ hr {
 }
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .topall1 {
         display: flex;
-        width: 106%;
+        width: 100%;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -819,14 +933,157 @@ button {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .boxx {
         background-color: #772260;
         color: white;
-        padding: 3px 10px;
+        padding: 9px 4px;
         border-radius: 6px;
         font-size: smaller;
-        width: 42%;
+        width: 35%;
         text-align: center;
+    }
+
+    .pro {
+        box-shadow: 0px 0px 2px 0px;
+        margin-top: 38px;
+        padding: 6px 19px;
+        width: 85%;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apa {
+        margin: 45px 0px 11px 0px;
+        width: 80%;
+        box-shadow: 0px 0px 2px 0px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .inflow {
+        box-shadow: 0px 0px 2px 0px;
+        margin: 10px 7px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.searchb {
+    color: white;
+    border-radius: 50%;
+    background-color: #772360;
+    padding: 6px;
+}
+
+.color {
+    background-color: transparent;
+    display: flex;
+    padding: 18px 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.color:hover {
+    background-color:
+        #f8f8f8;
+    color: black;
+}
+
+#All {
+    width: 100%;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.col {
+    font-size: 11px;
+    font-weight: normal
+}
+
+.pro12 {
+    background-color:
+        #f0f0f0;
+    padding: 15px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pro13 {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro14 {
+    padding: 0px 10px 10px 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .color {
+        background-color: transparent;
+        display: flex;
+        padding: 18px 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 10px 10px;
+        border-radius: 10px;
+        padding: 3px 10px;
+        width: 93%;
+        height: 150px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 11px 0px 10px 10px;
+        width: 80%;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topall {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .color {
+        background-color: transparent;
+        display: flex;
+        padding: 18px 10px;
+        align-items: center;
+        cursor: pointer;
     }
 }
