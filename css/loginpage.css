@@ -6,9 +6,10 @@
 .nav {
     padding: 40px 0px 0px 30px;
     background-color: #f3ead4;
-    height: 23px;
-    width: 101px;
+    height: 50px;
+    width: 198px;
     /* padding: 10px 10px; */
+    object-fit: none;
 }
 
 nav {
@@ -19,8 +20,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-
-
     .go {
         display: none;
     }
@@ -74,7 +73,7 @@ nav {
 
 @media (max-width: 768px) {
     .container {
-        background-color: beige;
+        background-color: #f2ebdc;
         position: relative;
         height: 100vh;
     }
@@ -82,7 +81,7 @@ nav {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .container {
-        background-color: beige;
+        background-color: #f2ebdc;
         position: relative;
         height: 100vh;
     }
@@ -128,14 +127,13 @@ nav {
 
 .left {
     line-height: 40px;
-    padding: 51px 180px 20px 20px;
+    /* padding: 51px 120px 20px 20px; */
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    justify-content: normal;
     text-align: left;
-    width: 30%;
+    width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -146,11 +144,17 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         text-align: left;
         height: 100vh;
-        width: 50%;
+        width: 75%;
     }
+}
+form {
+    padding-top: 40px;
+    font-size: 15PX;
+    color: #999999;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -164,17 +168,19 @@ nav {
         /* align-items: center; */
         text-align: left;
         height: 70vh;
-        width: 40%;
+        width: 60%;
+    }
+    form {
+        padding-top: 40px;
+        font-size: 15PX;
+        color: #999999;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
     }
 }
 
 
-form {
-    padding-top: 40px;
-    font-size: 15PX;
-    color: #999999;
-    font-family: 'Poppins', sans-serif;
-}
+
 
 label {
     font-family: 'Poppins', sans-serif;
@@ -193,6 +199,8 @@ form input {
 .pp {
     display: flex;
     justify-content: space-between;
+    width: 72%;
+    padding-top: 10px;
 }
 
 .pp a {
@@ -220,15 +228,14 @@ button {
     flex-direction: column;
     /* line-height: 7rem; */
     border: none;
+    width: 65%;
 }
 
 
 .butt {
     background-color: #772360;
     border-radius: 33px;
-    /* height: 50px; */
-    padding: 6px 70px;
-    /* width: 200px; */
+    padding: 4px 75px;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -255,10 +262,11 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px;
+        margin: 30px 20px;
         flex-direction: column;
         /* line-height: 7rem; */
         border: none;
+        width: 90%;
     }
 }
 
@@ -281,10 +289,12 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px;
+        margin: 30px 17px;
         flex-direction: column;
         /* line-height: 7rem; */
         border: none;
+        width: 89%;
+        padding: 10px;
     }
 }
 
@@ -296,11 +306,10 @@ button {
 
 .aa {
     text-decoration: none;
-    
+    width: 72%;
     text-align: center;
     font-size: 14px;
-    color:
-        #666666;
+    color: #666666;
 }
 
 
@@ -328,22 +337,51 @@ button {
 }
 
 .eye {
-    display: none;
+    position: absolute;
+    right: 12%;
+    bottom: 46%;
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
+@media (max-width: 768px)  {
     .eye {
         position: absolute;
-        right: 29%;
-        bottom: 45%;
+        right: 13%;
+        bottom: 48%;
+    }
+    .aa {
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #666666;
+    }
+    form {
+        padding-top: 40px;
+        font-size: 15PX;
+        color: #999999;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .eye {
         position: absolute;
-        right: 29%;
-        bottom: 45%;
+        right: 20%;
+        bottom: 49%;
+    }
+    .pp {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .aa {
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #666666;
     }
 }
 
@@ -355,11 +393,17 @@ button {
     flex-direction: row;
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
+@media (max-width: 768px)  {
     .button p {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .pp {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 10px;
     }
 }
 
@@ -369,4 +413,8 @@ button {
         align-items: center;
         justify-content: center;
     }
+}
+
+.line-h {
+    line-height: 20px;
 }
