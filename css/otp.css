@@ -3,6 +3,27 @@
     padding: 0%;
 }
 
+@font-face {
+    font-family: Poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+
 .img {
     position: relative;
 
@@ -11,9 +32,11 @@
     height: 70vh;
 }
 
-.label {
+.lable {
     color: #999999;
     font-size: 13px;
+    font-family: Poppins-Regular;
+   
 }
 
 .header {
@@ -76,13 +99,12 @@
 }
 
 
-
 form input {
     border: none;
     outline: none;
     border-bottom: 1px solid black;
     width: 100%;
-    padding: 10px;
+    padding: 7px 10px;
 }
 
 @media (max-width: 768px) {
@@ -90,8 +112,8 @@ form input {
         border: none;
         outline: none;
         border-bottom: 1px solid black;
-        width: 93%;
-        padding: 10px;
+        width: 100%;
+        padding: 10px 0px;
         background-color: transparent;
     }
 }
@@ -101,7 +123,7 @@ form input {
         border: none;
         outline: none;
         border-bottom: 1px solid black;
-        width: 93%;
+        width: 96%;
         padding: 10px;
         background-color: transparent;
     }
@@ -122,7 +144,7 @@ button {
     line-height: 3rem;
     padding-top: 30px;
     font-family: 'Poppins', sans-serif;
-    width: 74%;
+    width: 72%;
 }
 
 @media (max-width: 768px) {
@@ -170,16 +192,18 @@ button {
 
 .login h1 {
     font-size: 32px;
+    font-family: Poppins-SemiBold;
 }
 
 @media (max-width: 768px) {
     .login {
         font-family: 'Poppins', sans-serif;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: start;
+        padding: 0px 24px;
     }
 
     .login h1 {
@@ -203,13 +227,17 @@ button {
 
 .pp {
     padding: 40px 0px;
-    width: 70%;
+    width: 72%;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
     .pp {
         padding: 20px 0px;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -217,6 +245,8 @@ button {
     .pp {
         padding: 20px 0px;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -229,23 +259,28 @@ a {
 
 .para {
     background-color: #f78f1e;
-    padding: 16px 90px 16px 10px;
+    padding: 16px 50px 16px 10px;
     border-radius: 10px;
     font-size: 14px;
-    width: 80%;
+    width: 100%;
+    font-family: Poppins-Regular;
 }
 
 form {
-    width: 69%;
+    width: 67%;
+}
+
+label{
+    font-family: Poppins-Regular;
 }
 
 @media (max-width: 768px) {
     .para {
         background-color: #f78f1e;
-        padding: 16px 70px 16px 10px;
+        padding: 16px 50px 16px 15px;
         border-radius: 10px;
         font-size: 14px;
-        width: 80%;
+        width: 85%;
     }
 
     form {
@@ -259,7 +294,7 @@ form {
         padding: 16px 70px 16px 10px;
         border-radius: 10px;
         font-size: 14px;
-        width: 82%;
+        width: 86%;
     }
 
     form {
@@ -273,5 +308,9 @@ form {
     font-size: 14px;
     color: #666666;
     text-align: center;
+    font-family: Poppins-Regular;
 }
 
+.aa{
+    font-family: Poppins-Bold;
+}

@@ -3,6 +3,31 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: Poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: #772360 !important;
     color: #FFF;
@@ -34,6 +59,7 @@
 
 a {
     text-decoration: none;
+    font-family: Poppins-Medium;
 }
 
 .space {
@@ -43,6 +69,7 @@ a {
     font-size: 17px;
     font-weight: bold;
     color: #772360;
+    font-family: Poppins-Medium;
 }
 
 .content1 {
@@ -50,6 +77,10 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+}
+
+.content1 a{
+    font-family: Poppins-Medium;
 }
 
 .login {
@@ -89,18 +120,22 @@ a {
 .para h1 {
     font-weight: 500;
     text-align: left;
+    font-size: 44px;
 
 }
 
 .para h4 {
     text-align: left;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins-Regular;
 }
 
 .img {
     position: relative;
 
+}
+button h6{
+    font-family: poppins-Bold;
 }
 
 .select {
@@ -113,7 +148,8 @@ a {
 
 
 .select img {
-    width: 11px;
+    width: 16px;
+    object-fit: none;
 }
 
 option {
@@ -127,8 +163,9 @@ option {
     padding-top: 10px;
     outline: none;
     font-size: 20px;
-    width: 93%;
+    width: 100%;
     padding: 0px 10px;
+    font-family: Poppins-Regular;
 }
 
 button {
@@ -148,8 +185,12 @@ button {
 
 label {
     margin: 0px 5px;
+    font-family: Poppins-Regular;
 }
 
+.item p{
+    font-family: Poppins-Regular;
+}
 
 .radioo {
     display: flex;
@@ -285,6 +326,7 @@ P {
 .inputt {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .inputt img {
@@ -556,6 +598,10 @@ P {
     display: none;
 }
 
+.select h4{
+    font-family: Poppins-Regular;
+}
+
 
 @media (max-width: 768px) {
     .box4 {
@@ -756,9 +802,9 @@ P {
     background-color: #772360;
     font-weight: bold;
     color: white;
-    padding: 15px 50px;
+    padding: 15px 70px;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family:Poppins-Bold;
     font-size: 15px;
     cursor: pointer;
 }
@@ -767,8 +813,9 @@ label {
     color: #999999;
 }
 
-h1 {
+.coll h1 {
     margin: 20px 0px;
+    font-family: Poppins-SemiBold;
 }
 
 footer {
@@ -790,9 +837,14 @@ footer {
 .lastt p {
     color: white;
     padding: 0px 10px;
+    font-family: Poppins-Regular;
 }
 
-.lastt img {
+.phone {
+    padding-right: 10px;
+}
+
+.social {
     padding: 0px 10px;
 }
 
@@ -800,6 +852,7 @@ footer {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0px;
+    font-family: Poppins-SemiBold;
 }
 
 .ga {

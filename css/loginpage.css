@@ -3,6 +3,26 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: Poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
 .nav {
     padding: 40px 0px 0px 30px;
     background-color: #f3ead4;
@@ -65,15 +85,17 @@ nav {
 
 }
 
-.h1{
+.h1 {
     font-weight: 100;
     font-size: 32px;
+    font-family: Poppins-light;
 }
 
-.h12{
+.h12 {
     font-weight: 100;
     font-size: 32px;
     font-weight: bold;
+    font-family: Poppins-SemiBold;
 }
 
 .container {
@@ -89,12 +111,12 @@ nav {
         height: 100vh;
     }
 
-    .h1{
+    .h1 {
         font-weight: 100;
         font-size: 24px;
     }
 
-    .h12{
+    .h12 {
         font-weight: 100;
         font-size: 24px;
         font-weight: bold;
@@ -168,11 +190,13 @@ nav {
         justify-content: center;
         text-align: left;
         height: 100vh;
-        width: 75%;
+        width: 100%;
+        padding: 0px 24px;
     }
 }
+
 form {
-    padding-top: 40px;
+    padding-top: 50px;
     font-size: 15PX;
     color: #999999;
     font-family: 'Poppins', sans-serif;
@@ -192,6 +216,7 @@ form {
         height: 70vh;
         width: 60%;
     }
+
     form {
         padding-top: 40px;
         font-size: 15PX;
@@ -205,17 +230,17 @@ form {
 
 
 label {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins-Regular;
     font-size: 13px;
 }
 
 form input {
     outline: none;
     border: none;
-    border-bottom: 1px solid #8b8585;
+    border-bottom: 1px solid #666666;
     background-color: transparent;
     width: 100%;
-    padding: 5px;
+    padding: 10px 0px;
 }
 
 .pp {
@@ -228,6 +253,7 @@ form input {
 .pp a {
     color: black;
     font-size: 12px;
+    font-family: Poppins-Regular;
 }
 
 button {
@@ -262,13 +288,14 @@ button {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: Poppins-Bold;
 }
 
 @media (max-width: 768px) {
     .butt {
         background-color: #772360;
-        border-radius: 33px;
+        border-radius: 25px;
         /* height: 50px; */
         padding: 6px 2px;
         width: 100%;
@@ -278,17 +305,18 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 14px;
     }
 
     .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 20px;
+        margin: 25px 0px;
         flex-direction: column;
         /* line-height: 7rem; */
         border: none;
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -305,6 +333,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+       
     }
 
     .button {
@@ -332,8 +361,20 @@ button {
     text-align: center;
     font-size: 14px;
     color: #666666;
+    /* margin: 20px; */
+    font-family: Poppins-Regular;
 }
 
+.aa a {
+    font-family: Poppins-Bold;
+}
+
+.ab{
+color: #772360;
+text-decoration: none;
+font-weight: bold;
+font-family: Poppins-Bold;
+}
 
 @media (max-width: 768px) {
 
@@ -351,25 +392,25 @@ button {
     }
 }
 
-
-
-
-.pass {
+#inputt{
     position: relative;
 }
 
+
+
+
 .eye {
     position: absolute;
-    right: 12%;
-    bottom: 46%;
+    right: 6px;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .eye {
         position: absolute;
-        right: 13%;
-        bottom: 48%;
+        right: 0px;
+       
     }
+
     .aa {
         text-decoration: none;
         width: 100%;
@@ -377,8 +418,9 @@ button {
         font-size: 14px;
         color: #666666;
     }
+
     form {
-        padding-top: 40px;
+        padding-top: 50px;
         font-size: 15PX;
         color: #999999;
         font-family: 'Poppins', sans-serif;
@@ -389,15 +431,17 @@ button {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .eye {
         position: absolute;
-        right: 20%;
-        bottom: 49%;
+        right: 0px;
+       
     }
+
     .pp {
         display: flex;
         justify-content: space-between;
         width: 100%;
         padding-top: 10px;
     }
+
     .aa {
         text-decoration: none;
         width: 100%;
@@ -415,17 +459,26 @@ button {
     flex-direction: row;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .button p {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .pp {
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         width: 100%;
         padding-top: 10px;
+    }
+
+    .opt{
+        display: none;
+    }
+
+    .forget{
+        text-decoration: none;
     }
 }
 
@@ -438,5 +491,5 @@ button {
 }
 
 .line-h {
-    line-height: 20px;
+    line-height: 10px;
 }

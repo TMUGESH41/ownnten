@@ -59,17 +59,17 @@
                         <img src="./image/Path 192.png">
                     </div>
 
-                </div>
+                <!-- </div> -->
 
 
-                <div style="padding-left: 10px;"><input placeholder="Search for locality, landmark, project or builder"
+                <div style="padding-left: 10px;width: 100%;"><input placeholder="Search for locality, landmark, project or builder"
                         class="input">
-                </div>
+                </div></div>
                 <div style="display: flex;">
                     <div class="radioo">
                         <input type="radio" name="clas" class="in">
                         <label>Rent</label>
-                    </div>
+                    
                     <div class="radioo">
                         <input type="radio" name="clas" class="in">
                         <label>Buy</label>
@@ -83,7 +83,7 @@
                         <img src="./image/search_black_24dp.png">
                         <h6 style="padding: 1px 10px;">Search</h6>
                     </button>
-                </div>
+                </div></div>
             </div>
 
 
@@ -200,14 +200,14 @@
     <footer>
         <div class="lastt">
             <div style="line-height: 2rem;" class="ga">
-                <img src="./image/logo-03.png">
+                <img src="./image/logo-03.png" style="padding-left: 10px;">
 
                 <div style="display: flex;align-items: center;">
-                    <p><img src="./image/call.png">8122723731</p>
+                    <p><img src="./image/call.png" class="phone">8122723731</p>
                 </div>
 
                 <div style="display: flex;align-items: center;">
-                    <p><img src="./image/mail.png">info@ownnten.com</p>
+                    <p><img src="./image/mail.png" class="phone">info@ownnten.com</p>
                 </div>
 
                 <div style="display: flex;align-items: center;">
@@ -232,10 +232,10 @@
             <div style="line-height: 2rem;" class="ga">
                 <p class="bold">Connect Us</p>
                 <div style="display: flex;align-items: center;">
-                    <img src="./image/facebook.png">
-                    <img src="./image/twitter.png">
-                    <img src="./image/lin.png">
-                    <img src="./image/instagram.png">
+                    <img src="./image/facebook.png" class="social">
+                    <img src="./image/twitter.png" class="social">
+                    <img src="./image/lin.png" class="social">
+                    <img src="./image/instagram.png" class="social">
                 </div>
             </div>
     </footer>
@@ -247,7 +247,7 @@
             var owl = $(".owl-carousel");
             owl.owlCarousel({
                 items: 3,
-                margin: 7,
+                margin: 20,
                 loop: true,
                 nav: true,
                 responsiveClass: true,
@@ -261,9 +261,14 @@
                         nav: true
                     },
                     1000: {
-                        items: 3,
+                        items: 2,
                         nav: true,
                         loop: true
+                    },
+                    1440:{
+                        items:3,
+                        nav:true,
+                        loop:true
                     }
                 }
             });
