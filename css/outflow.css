@@ -7,16 +7,47 @@ body {
     background-color: #f0f0f0;
 }
 
+
+@font-face {
+    font-family: Poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
 .topall {
     display: flex;
     /* justify-content: center; */
-    width: 100%;
+
+}
+
+.property {
+    height: 100%;
 }
 
 nav input {
     border: none;
     outline: none;
     background-color: transparent;
+
 }
 
 .radio label {
@@ -29,6 +60,7 @@ select {
     font-size: 16px;
     margin: 0px 9px;
     outline: none;
+    font-family: Poppins-Regular !important;
 }
 
 option {
@@ -71,6 +103,12 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .topall {
+        display: flex;
+        justify-content: center;
+    }
+
     hr {
         width: 100%;
         margin: 0px 0px;
@@ -86,7 +124,7 @@ hr {
         flex-direction: column;
     }
 
-    .flex {
+    .flex1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -102,6 +140,10 @@ hr {
         padding: 5px;
         border-radius: 20px;
         border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -116,6 +158,7 @@ hr {
     width: 50%;
     display: flex;
     align-items: center;
+    font-family: Poppins-Regular;
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,10 +192,9 @@ hr {
 
 .tab {
     display: flex;
-
     color: #6e6e6e;
-
     align-items: center;
+    /* justify-content: center; */
 }
 
 .right h2 {
@@ -164,13 +206,15 @@ hr {
 .left h2 {
     font-size: 18px;
     font-weight: 600;
+    font-family: Poppins-SemiBold;
+    padding-top: 20px;
 }
 
 
 @media only screen and (max-width: 768px) {
     .tab {
         display: flex;
-        margin: 3px;
+        /* margin: 3px; */
         color: #6e6e6e;
         padding-top: 20px;
         align-items: center;
@@ -186,11 +230,14 @@ hr {
 .tab button {
     border: none;
     background-color: transparent;
-    padding: 10px 182px 10px 8px;
+    padding: 10px 182px 10px 15px;
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
     color: #6e6e6e;
+    font-family: Poppins-Medium !important;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .tab button:hover {
@@ -202,49 +249,40 @@ hr {
     .tab button {
         border: none;
         background-color: transparent;
-        padding: 10px 6px;
+        padding: 10px 10px;
         cursor: pointer;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 12px;
     }
-
 }
 
 .right {
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 10px 10px 10px 50px;
+    margin: 10px 25px;
     border-radius: 10px;
-    padding: 30px 0px;
+    padding: 34px 0px;
     width: 20%;
-    height: 540px;
+    /* height: 70vh; */
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 180px;
 }
 
 
 
 @media only screen and (max-width: 768px) {
-
     .right {
         /* display: flex; */
         /* flex-direction: column; */
         /* background-color: white; */
-        margin: 10px 10px;
+        margin: 7px 0px;
         border-radius: 10px;
-        padding: 3px 10px;
-        width: 95%;
-        height: 150px;
+        padding: 25px 10px;
+        width: 100%;
+        /* height: 150px; */
         font-family: 'Poppins', sans-serif;
-    }
-
-    .apa {
-        margin: 45px 0px 11px 0px;
-        width: 97%;
-        box-shadow: 0px 0px 2px 0px;
-        padding: 20px 30px;
-        border-radius: 10px;
-        cursor: pointer;
     }
 }
 
@@ -280,9 +318,10 @@ hr {
     .header {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         justify-content: center;
         align-items: center;
+        padding: 20px 24px;
     }
 
 }
@@ -346,25 +385,27 @@ hr {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    padding: 30px;
-    margin: 11px 64px 10px 10px;
-    width: 65%;
+    padding: 0px 30px;
+    margin: 11px 30px 10px 10px;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
     .left {
-        background-color: transparent;
-        padding: 10px;
+        /* padding: 10px; */
         border-radius: 10px;
-        padding: 10px;
-        margin: 11px 0px 10px 10px;
-        width: 80%;
+        /* padding: 0px; */
+        /* width: auto; */
         font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* margin: 0px; */
+        margin: 0px 1px;
+        padding: 0px 12px;
     }
 }
+
 
 
 .all {
@@ -410,43 +451,44 @@ hr {
         margin: 22px 13px 35px 0px;
     }
 
+    .tab img {
+        display: none;
+    }
+
 }
 
 .pro {
     box-shadow: 0px 0px 2px 0px;
     margin-top: 38px;
-    padding: 6px 10px;
-    width: 28%;
+    padding: 6px 12px;
+    /* width: 30%; */
     border-radius: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    line-height: 15px;
+    line-height: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-
     .pro {
         box-shadow: 0px 0px 2px 0px;
-        margin-top: 38px;
-        padding: 6px 19px;
-        width: 85%;
+        margin: 30px 12px;
+        width: 100%;
         border-radius: 10px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        padding: 5px 12px;
     }
 
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-
     .pro {
         box-shadow: 0px 0px 2px 0px;
         margin-top: 38px;
         padding: 6px 10px;
-        width: 28%;
+        width: 100%;
         border-radius: 10px;
         cursor: pointer;
         display: flex;
@@ -476,14 +518,20 @@ hr {
 
 .add {
     font-size: 11px;
-    width: max-content;
+    font-family: Poppins-Regular;
 
+    display: flex;
+    justify-content: left;
+    align-items: start;
 }
 
 .add1 {
     font-size: 11px;
-    width: max-content;
+
     color: #666666;
+    font-family: Poppins-Regular;
+    display: flex;
+    justify-content: end;
 }
 
 
@@ -495,7 +543,21 @@ hr {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    text-align: end;
+    text-align: start;
+
+}
+
+.apap {
+    /* width: 25%; */
+    text-align: center;
+    background-color: #772260;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Poppins-Medium;
 }
 
 
@@ -503,7 +565,7 @@ hr {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .apa {
         margin: 40px 25px 20px 25px;
-        width: 32%;
+        width: 100%;
         box-shadow: 0px 0px 2px 0px;
         padding: 10px;
         border-radius: 10px;
@@ -516,6 +578,7 @@ hr {
 
 .cbtn {
     display: flex;
+    font-family: Poppins-Medium;
 }
 
 @media only screen and (max-width: 768px) {
@@ -526,17 +589,14 @@ hr {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-
-
 @media only screen and (max-width: 768px) {
 
     .topall {
         display: flex;
         flex-direction: column;
-        width: 100%;
         justify-content: center;
+        align-items: center;
+        padding: 12px 12px;
     }
 
 }
@@ -544,6 +604,7 @@ hr {
 .bold {
     font-weight: bold;
     font-size: 14px;
+    font-family: Poppins-Medium;
 }
 
 .inflow {
@@ -573,15 +634,15 @@ hr {
     h2 {
         display: flex;
         justify-content: center;
-        width: 90%;
-        margin: 10px;
+        margin-bottom: 15px;
+        font-family: Poppins-SemiBold;
     }
 
     .to {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 0px !important;
         justify-content: end;
-        width: 120%;
+
     }
 
 }
@@ -612,18 +673,17 @@ hr {
     color: white;
     cursor: pointer;
     border: none;
+    font-family: Poppins-Medium;
 }
 
 .back {
     color: black;
     background-color: #f8f8f8;
     padding: 6px 16px;
-
     border-radius: 5px;
-    /* text-align: left; */
-    /* height: 0px; */
     margin: 13px 3px;
     cursor: pointer;
+    font-family: Poppins-Regular;
 }
 
 .back:hover {
@@ -643,12 +703,15 @@ hr {
     color: #772360;
     font-size: 11px;
     font-weight: 500;
+    font-family: Poppins-Medium;
 }
 
 .point {
     cursor: pointer;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     padding: 0px 30px 0px 0px;
+    font-family: Poppins-Medium;
 }
 
 #btn1 {
@@ -682,11 +745,11 @@ hr {
 @media only screen and (max-width: 768px) {
 
     .gap {
-        padding: 10px 9px;
+        /* padding: 10px 9px; */
         border: 20px;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         box-shadow: 0px 0px 2px 0px;
         margin: 10px 0px;
         border-radius: 10px;
@@ -696,7 +759,7 @@ hr {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .gap {
-        padding: 10px 22px;
+        /* padding: 10px 22px; */
         border: 20px;
         display: flex;
         flex-direction: column;
@@ -709,16 +772,18 @@ hr {
     h2 {
         display: flex;
         justify-content: center;
-        width: 90%;
+
         margin: 10px;
     }
 
     #property {
-        width: 60%;
+        width: 100%;
+        padding-bottom: 40px;
     }
 
     #Loan {
-        width: 60%;
+        width: 100%;
+        padding-bottom: 40px;
     }
 }
 
@@ -743,52 +808,47 @@ hr {
     }
 
     #Loan {
-        width: 80%;
+        width: 100%;
+
     }
 
     #property {
-        width: 80%;
+        width: 100%;
+
     }
-}
 
-.apap {
-    width: 25%;
-    text-align: center;
-    background-color: #772260;
-    color: white;
-    padding: 6px 11px;
-    border-radius: 6px;
-    font-size: 11px;
-    font-weight: 500;
-    text-decoration: none;
-}
+    .apap {
+        width: auto;
+        text-align: center;
+        background-color: #772260;
+        color: white;
+        padding: 6px 11px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 500;
+        text-decoration: none;
+        font-family: Poppins-Medium;
+    }
 
-.apa {
-    text-align: end;
-    margin: 40px 25px 20px 25px;
-    width: 30%;
-    box-shadow: 0px 0px 2px 0px;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    /* text-decoration: none; */
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .apap {
-        width: 41%;
+        width: auto;
         text-align: end;
         background-color: #772260;
         color: white;
         padding: 7px 11px;
         border-radius: 6px;
         font-size: smaller;
+        text-decoration: none;
     }
 }
 
 .disp {
     display: flex;
-    width: 15%;
+    width: 30%;
     justify-content: end;
     align-items: center;
 }
@@ -818,8 +878,8 @@ hr {
 .pro11 {
     display: flex;
     justify-content: end;
-    width: 107%;
-    margin: 10px -20px;
+
+
     padding: 11px 0px;
 
     flex-direction: row;
@@ -828,11 +888,12 @@ hr {
 .boxx {
     background-color: #772260;
     color: white;
-    padding: 6px 11px;
+    padding: 9px 11px;
     border-radius: 6px;
     text-align: center;
     font-size: 11px;
     font-weight: 500;
+    font-family: Poppins-Medium;
 }
 
 
@@ -850,6 +911,7 @@ hr {
         width: 100%;
         justify-content: flex-start;
         flex-direction: column;
+        padding: 20px 0px;
     }
 }
 
@@ -861,6 +923,7 @@ hr {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 40px;
     }
 }
 
@@ -880,7 +943,7 @@ button {
 
 @media only screen and (max-width: 768px) {
 
-    .flex {
+    .flex1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -906,28 +969,38 @@ button {
 @media only screen and (max-width: 768px) {
 
     #outflow {
-        width: 80%;
+        width: 100%;
+
     }
 }
 
 #Inflow {
     width: 100%;
+
 }
 
 @media only screen and (max-width: 768px) {
 
     #Inflow {
-        width: 80%;
+        width: 100%;
+
     }
 }
 
 @media only screen and (max-width: 768px) {
 
+    .color:hover {
+        background-color:
+            #f8f8f8;
+        color: black;
+        border-radius: 20px;
+    }
+
     .apa {
-        margin: 45px 0px 11px 0px;
-        width: 80%;
+        margin: 0px;
+        width: 100%;
         box-shadow: 0px 0px 2px 0px;
-        padding: 20px 30px;
+        padding: 15px 12px;
         border-radius: 10px;
         cursor: pointer;
     }
@@ -940,28 +1013,8 @@ button {
         padding: 9px 4px;
         border-radius: 6px;
         font-size: smaller;
-        width: 35%;
+
         text-align: center;
-    }
-
-    .pro {
-        box-shadow: 0px 0px 2px 0px;
-        margin-top: 38px;
-        padding: 6px 19px;
-        width: 85%;
-        border-radius: 10px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .apa {
-        margin: 45px 0px 11px 0px;
-        width: 80%;
-        box-shadow: 0px 0px 2px 0px;
-        padding: 20px 30px;
-        border-radius: 10px;
-        cursor: pointer;
     }
 
     .inflow {
@@ -985,7 +1038,7 @@ button {
 
 .color {
     background-color: transparent;
-    display: flex;
+    /* display: flex; */
     padding: 18px 20px;
     align-items: center;
     cursor: pointer;
@@ -995,6 +1048,7 @@ button {
     background-color:
         #f8f8f8;
     color: black;
+
 }
 
 #All {
@@ -1004,11 +1058,13 @@ button {
 .name {
     font-size: 12px;
     font-weight: 500;
+    font-family: Poppins-Medium;
 }
 
 .col {
     font-size: 11px;
-    font-weight: normal
+    font-weight: normal;
+    font-family: Poppins-Regular;
 }
 
 .pro12 {
@@ -1029,23 +1085,23 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-
     .color {
         background-color: transparent;
         display: flex;
         padding: 18px 10px;
         align-items: center;
         cursor: pointer;
+        width: 100%;
     }
 
     .right {
         display: flex;
         flex-direction: column;
         background-color: white;
-        margin: 10px 10px;
+        margin: 0px;
         border-radius: 10px;
-        padding: 3px 10px;
-        width: 93%;
+        padding: 3px 0px;
+        width: 100%;
         height: 150px;
         font-family: 'Poppins', sans-serif;
     }
@@ -1053,18 +1109,18 @@ button {
     .header {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         justify-content: center;
         align-items: center;
+        padding: 25px 20px;
     }
 
     .left {
-        background-color: transparent;
-        padding: 10px;
+        background-color: white;
         border-radius: 10px;
-        padding: 10px;
-        margin: 11px 0px 10px 10px;
-        width: 80%;
+        padding: 0px;
+        margin: 5px 31px;
+        /* margin-top: 30px; */
         font-family: 'Poppins', sans-serif;
         display: flex;
         justify-content: center;
@@ -1073,17 +1129,377 @@ button {
     .topall {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         justify-content: center;
+        align-items: center;
+        padding: 0px 24px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .color {
         background-color: transparent;
-        display: flex;
-        padding: 18px 10px;
+        /* display: flex; */
+        padding: 0px !important;
         align-items: center;
         cursor: pointer;
+        width: 100%;
     }
+
+    .phoneview {
+        display: block !important;
+    }
+
+    .cointainer {
+        display: none !important;
+    }
+}
+
+
+/* navbar */
+.navv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 30px; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.phoneview {
+    display: none;
+}
+
+.inputt {
+    background-color: #fffdf7;
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: 2px solid #f6e8c6;
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins-Regular;
+}
+
+.iii {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #dcb966;
+    outline: none;
+    margin-left: 10px;
+    font-family: Poppins-Regular;
+}
+
+select {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Poppins-Regular;
+}
+
+.radio1 {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-family: Poppins-Regular;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: Poppins-Regular;
+}
+
+.dispall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    font-weight: bold;
+}
+
+/* .p {
+    margin: 0px 15px 0px 0px;
+} */
+
+.point {
+    margin: 0px 15px;
+    font-family: Poppins-Medium;
+}
+
+label {
+    margin: 0px 5px;
+}
+
+.searchb {
+    color: white;
+    border-radius: 50%;
+    background-color: #772360;
+    padding: 6px;
+}
+
+
+
+.row {
+    --bs-gutter-x: 0rem !important;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .searchb {
+        color: white;
+        border-radius: 50%;
+        background-color: #772360;
+        padding: 6px;
+    }
+
+    .phoneview {
+        display: block;
+        padding: 10px 10px;
+        background-color: white;
+    }
+
+    .navv {
+        display: none;
+    }
+
+    .inputt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fffdf7;
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: 2px solid #f6e8c6;
+        margin: 10px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .disp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+    }
+
+    .point {
+        margin: 20px 10px;
+    }
+
+    .paste {
+        position: absolute;
+        top: 47%;
+        left: 29%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 38%;
+        height: 23%;
+
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .cbtn img {
+        display: none;
+    }
+
+    .paste {
+        position: absolute;
+        top: 47%;
+        left: 29%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 38%;
+        height: 23%;
+
+    }
+
+    .navv {
+        display: none;
+    }
+
+    .phoneview {
+        display: block;
+        padding: 0px 10px;
+        background-color: white;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        /* margin: 0px 10px; */
+    }
+
+    .small {
+        width: 11px;
+        height: 7px;
+        padding: 7px 3px;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 15px 10px;
+    }
+
+    .search {
+        padding: 5px 10px;
+    }
+
+    .madu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0px 150px; */
+        font-size: 16px;
+        /* width: 100%; */
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        padding-top: 10px;
+        outline: none;
+        font-size: 17px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+
+
+    .line10 {
+        width: 100%;
+        height: 2px;
+        background-color: #eeeeee;
+
+    }
+
+    .login1 {
+        border: 1px solid black;
+        border-radius: 24px;
+        padding: 6px 20px;
+        background-color: transparent;
+        cursor: pointer;
+
+        text-align: center;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navv {
+        display: none;
+    }
+
+    .phoneview {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .small {
+        width: 11px;
+        height: 7px;
+        padding: 7px 3px;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 15px 10px;
+    }
+
+    .search {
+        padding: 5px 10px;
+    }
+
+    .madu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0px 150px; */
+        font-size: 16px;
+        /* width: 100%; */
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        padding-top: 10px;
+        outline: none;
+        font-size: 17px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+
+
+    .line10 {
+        width: 100%;
+        height: 2px;
+        background-color: #eeeeee;
+
+    }
+
+    .login1 {
+        border: 1px solid black;
+        border-radius: 24px;
+        padding: 6px 20px;
+        background-color: transparent;
+        cursor: pointer;
+
+        text-align: center;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+
+/* nav */
+
+.cointainer {
+    background-color: white;
+}
+
+.lastword {
+    display: flex;
+    justify-content: end;
+}
+
+.tab img {
+    color: #772260;
+     
 }

@@ -53,13 +53,42 @@
         </nav>
     </div>
 
+    <div class="phoneview">
+        <div class="nav">
+            <div>
+                <a href="outflow.html"> <img src="./image/combined-shape.png"></a>
+            </div>
+            <div class="madu">
+                <div style="display: flex;align-items: center;">
+                    <img src="./image/place_black_24dp.png">
+
+
+                    <select>
+                        <option>Madurai</option>
+                        <option>Madurai</option>
+                    </select>
+                    <!-- <p>Madurai</p><img src="./image/Path 192.png" class="small"> -->
+                </div>
+            </div>
+            <a class="login1" href="loginpage.html">Login</a>
+        </div>
+
+        <div class="line10"></div>
+
+        <div class="nav1">
+            <img src="./image/search-black-24-dp.png" class="search">
+            <input type="text" placeholder="Search ">
+        </div>
+    </div>
+    
+
 
 
     <div class="header">
         <div class="right">
             <h2>Dashboard</h2>
 
-            <div class="flex">
+            <div class="flex1">
                 <div class="color">
                     <div class="tab">
                         <img src="./image/hand-key-copy-3.png">
@@ -110,7 +139,7 @@
                         <button id="btn1" class="point" onclick="openCitys('Rent')">Rent</button>
                         <button id="btn1" class="point" onclick="openCitys('Available')">Available</button>
                     </div>
-                    <div style="display: flex; justify-content: end; align-items: center;width: 100%;">
+                    <div style="display: flex; justify-content: end; align-items: center;width: 100%;padding-right: 20px;">
                         <img src="./image/+but.png" style="cursor: pointer;">
                     </div>
                 </div>
@@ -130,82 +159,75 @@
 
                         <div class="pro">
                             <div class="pro1">
-                                <p class="bold">AK Apartment</p>
-                                <p class="bold" style="color: #772260;">₹20,000</p>
+                                <span class="bold">AK Apartment</span>
+                                <span class="bold" style="color: #772260;">₹20,000</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="add">250 ARK Street, Bypass Road, Madurai.</p>
-                                <p class="add1">Dec 02, 2021</p>
+                                <span class="add">250 ARK Street, Bypass Road, Madurai.</span>
+                                <span class="add1">Dec 02, 2021</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="name">Vinoth</p>
-                                <p class="boxx"> Agreement Review</p>
+                                <span class="name">Vinoth</span>
+                                <span class="boxx"> Agreement Review</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="view">View Detail</p>
-                                <p style="color: #eb5758;" class="col">Waiting for Approval</p>
+                                <span class="view">View Detail</span>
+                                <span style="color: #eb5758;" class="col">Waiting for Approval</span>
                             </div>
                         </div>
 
                         <div class="apa">
                             <div class="pro1">
-                                <p class="bold" style="font-weight: bold;">KFM Apartment</p>
-                                <p class="bold" style="color: #772260;font-weight: bold;">₹15,000</p>
+                                <span class="bold" style="font-weight: bold;">KFM Apartment</span>
+                                <span class="bold" style="color: #772260;font-weight: bold;">₹15,000</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="add">T81 Nilla Street, Anna Nagar, Madurai.</p>
-                                <p class="add1">Dec 12,2021</p>
+                                <span class="add">T81 Nilla Street,Anna Nagar,Madurai.</span>
+                                <span class="add1">Dec 12,2021</span>
 
                             </div>
 
-
+                              <div class="lastword">
                             <a class="apap" href="tenate.html">
-                                Add Tenant</a>
+                                Add Tenant</a></div>
                         </div>
 
                         <div class="pro">
                             <div class="pro1">
-                                <p class="bold" style="font-weight: bold;">Rahul Villa</p>
-                                <p class="bold" style="color: #772260;font-weight: bold;">₹18,000</p>
+                                <span class="bold" style="font-weight: bold;">Rahul Villa</span>
+                                <span class="bold" style="color: #772260;font-weight: bold;">₹18,000</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="add">102 KRG Street, Mullai Nagar, Madurai.</p>
-                                <p class="add1">Jun 10, 2021</p>
+                                <span class="add">102 KRG Street, Mullai Nagar, Madurai.</span>
+                                <span class="add1">Jun 10, 2021</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="name">Sharma</p>
-                                <p class="boxx"> Agreement Accepted</p>
+                                <span class="name">Sharma</span>
+                                <span class="boxx"> Agreement Accepted</span>
                             </div>
 
                             <div class="pro1">
-                                <p class="view">View Detail</p>
-                                <p style="color: #44b779;" class="col">Tenant Agreed</p>
+                                <span class="view">View Detail</span>
+                                <span style="color: #44b779;" class="col">Tenant Agreed</span>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-
                 <div id="Rent" class="w3-container state" style="display:none">
                     <div class="done">
-                        <p class="bold">Rent</p>
+                        <span class="bold">Rent</span>
                     </div>
                 </div>
 
                 <div id="Available" class="w3-container state" style="display:none">
                     <div class="done">
-                        <p class="bold">Available</p>
+                        <span class="bold">Available</span>
                     </div>
                 </div>
             </div>
@@ -216,95 +238,103 @@
                 <h2>Inflow</h2>
                 <hr class="line">
                 <div class="to">
-                    <P class="back">Open</P>
-                    <P class="back">Closed</P>
+                    <span class="back">Open</span>
+                    <span class="back">Closed</span>
                 </div>
 
                 <div class="topall1">
                     <div class="gap">
                         <div class="pro12">
-                            <p class="bold">AK Apartment<br>Madurai
-                            </p>
+                            <span class="bold">AK Apartment<br>Madurai
+                            </span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Advance</p>
-                            <p class="bold">₹ 80,000</p>
+                            <span class="bold">Advance</span>
+                            <span class="bold">₹ 80,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 15,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Maintenance</p>
-                            <p class="bold">₹ 1,000</p>
+                            <span class="bold">Maintenance</span>
+                            <span class="bold">₹ 1,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 10, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 10,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">EB</p>
-                            <p class="bold">₹ 1,500</p>
+                            <span class="bold">EB</span>
+                            <span class="bold">₹ 1,500</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Feb 15, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Feb 15,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Rent</p>
-                            <p class="bold">₹ 8,000</p>
+                            <span class="bold">Rent</span>
+                            <span class="bold">₹ 8,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Jan 05, 2022</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Jan 05,
+                                    2022</span></span>
                         </div>
 
                     </div>
 
                     <div class="gap">
                         <div class="pro12">
-                            <p class="bold">Rahul Villa<br>Madurai
-                            </p>
+                            <span class="bold">Rahul Villa<br>Madurai
+                            </span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Advance</p>
-                            <p class="bold">₹ 70,000</p>
+                            <span class="bold">Advance</span>
+                            <span class="bold">₹ 70,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Nov 10,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Maintenance</p>
-                            <p class="bold">₹ 1,000</p>
+                            <span class="bold">Maintenance</span>
+                            <span class="bold">₹ 1,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Nov 10,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">EB</p>
-                            <p class="bold">₹ 1,800</p>
+                            <span class="bold">EB</span>
+                            <span class="bold">₹ 1,800</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 15,
+                                    2021</span></span>
                         </div>
 
                         <div class="pro13">
-                            <p class="bold">Rent</p>
-                            <p class="bold">₹ 7,000</p>
+                            <span class="bold">Rent</span>
+                            <span class="bold">₹ 7,000</span>
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 05, 2021</span></p>
+                            <span class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 05,
+                                    2021</span></span>
                         </div>
 
                     </div>
@@ -336,7 +366,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 15, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -345,7 +376,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 10, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 10, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -354,7 +386,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Feb 15, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Feb 15, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -363,7 +396,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Jan 05, 2022</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Jan 05, 2022</span>
+                            </p>
                         </div>
 
                     </div>
@@ -380,7 +414,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Nov 10, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -389,7 +424,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Nov 10, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Nov 10, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -398,7 +434,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 15, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 15, 2021</span>
+                            </p>
                         </div>
 
                         <div class="pro13">
@@ -407,7 +444,8 @@
                         </div>
 
                         <div class="pro14">
-                            <p class="add">Due on <span style="color: #eb5758;">Dec 05, 2021</span></p>
+                            <p class="add">Due on <span style="color: #eb5758;padding: 0px 10px;">Dec 05, 2021</span>
+                            </p>
                         </div>
 
                     </div>

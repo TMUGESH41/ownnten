@@ -3,6 +3,32 @@
     padding: 0;
 }
 
+
+@font-face {
+    font-family: Poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
 /* navbar */
 .navv {
     display: flex;
@@ -25,6 +51,7 @@
     width: 50%;
     display: flex;
     align-items: center;
+    font-family: Poppins-Regular;
 }
 
 .iii {
@@ -62,7 +89,8 @@ input {
     justify-content: center;
     align-items: center;
     width: 17%;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: Poppins-Medium;
 }
 
 .p {
@@ -345,6 +373,7 @@ label {
     font-size: 18px;
     font-weight: 600;
     padding: 10px 20px;
+    font-family: Poppins-SemiBold;
 }
 
 hr {
@@ -363,6 +392,7 @@ hr {
 .heading {
     font-size: 15px;
     font-weight: 500;
+    font-family: Poppins-Medium;
 }
 
 .line {
@@ -380,6 +410,7 @@ hr {
 .name {
     color: #999999;
     font-size: 13px;
+    font-family: Poppins-Regular;
 }
 
 button {
@@ -400,6 +431,7 @@ button {
     border-radius: 5px;
     border: none;
     border: 2px solid #772360;
+    font-family: Poppins-Medium;
 }
 
 .lastbut button:hover {
@@ -426,4 +458,42 @@ button {
         margin-top: 20px;
         border-radius: 12px;
     }
+}
+
+.atag{
+    position: relative;
+}
+.aimg1 {
+    position: absolute;
+    left: 248px;
+   top: -3px;
+}
+.aimg3 {
+    position: absolute;
+    right: 242px;
+   top: -3px;
+}
+.aimg2{
+    position: absolute;
+   top: -3px;
+}
+
+
+.index1 {
+    z-index: 1;
+    padding: 0px 45px;
+    font-family: Poppins-Medium;
+}
+
+.index2 {
+    z-index: 1;
+    padding: 9px 25px 8px 35px;
+    font-family: Poppins-Medium;
+}
+
+.index3 {
+    z-index: 1;
+    padding: 0px 37px;
+    font-family: Poppins-Medium;
+    color: white;
 }
