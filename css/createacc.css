@@ -63,14 +63,12 @@
     font-size: 46px;
 }
 
-.container {
+.container1 {
 
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-
-
 
 .login {
     padding-top: 65px;
@@ -84,13 +82,13 @@
     font-weight: bold;
     cursor: pointer;
     border: none;
-    padding: 0px 40%;
     text-decoration: none;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Poppins-Bold;
+    width: 100%;
 }
 
 
@@ -128,7 +126,7 @@
 
 
 form {
-    padding-top: 5%;
+
     line-height: 2rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -138,7 +136,7 @@ form {
     padding-top: 30px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    width: 80%;
+    width: 77%;
 }
 
 label {
@@ -149,10 +147,10 @@ label {
 }
 
 .lo {
-    color: #772360;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Poppins-Bold;
+    color: #772360 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-family: Poppins-Bold !important;
 }
 
 #input1 {
@@ -161,7 +159,7 @@ label {
 
 .ab {
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
 #input2 {
@@ -170,7 +168,7 @@ label {
 
 .abb {
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -179,11 +177,11 @@ label {
         right: 0px;
     }
 
-    
-.abb {
-    position: absolute;
-    right: 0px;
-}
+
+    .abb {
+        position: absolute;
+        right: 0px;
+    }
 
     .h1 {
         font-weight: 100;
@@ -203,12 +201,12 @@ label {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .ab {
         position: absolute;
-        right: 7px;
+        right: 23px;
     }
 
     .abb {
         position: absolute;
-        right: 7px;
+        right: 23px;
     }
 
     .ac {
@@ -226,7 +224,7 @@ label {
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -255,14 +253,15 @@ label {
         font-weight: bold;
         cursor: pointer;
         border: none;
-        padding: 0px 129px;
+
         text-decoration: none;
         font-size: 14px;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -285,10 +284,11 @@ label {
         font-weight: bold;
         cursor: pointer;
         border: none;
-        padding: 0px 0px;
+
         text-decoration: none;
         font-size: 14px;
         font-family: Poppins-Bold;
+        width: 100%;
     }
 
 }
@@ -332,7 +332,7 @@ label {
 
 .lineh {
     line-height: 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     width: 80%;
 }
 
@@ -352,4 +352,20 @@ label {
         padding-top: 30px;
         width: 100%;
     }
+}
+
+.javascr {
+    /* text-align: center; */
+    /* width: 80%; */
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: red;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.toast-body {
+    background-color: #f3ead4;
+    font-family: Poppins-Bold;
+
 }

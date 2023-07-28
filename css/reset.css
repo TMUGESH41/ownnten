@@ -85,7 +85,7 @@ body{
    font-size: 46px;
 }
 
-.container {
+.container1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -93,7 +93,7 @@ body{
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -104,7 +104,7 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -157,15 +157,14 @@ form input {
 .res {
     background-color: #772360;
     width: 100%;
-    
-    border: none;
+        border: none;
     border-radius: 26px;
     cursor: pointer;
     font-weight: bold;
     color: white;
     font-size: 14px;
     display: flex;
-    padding: 0px 15px;
+    /* padding: 15px 15px; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -304,4 +303,20 @@ form {
     font-weight: bold;
     text-decoration: none;
     font-family: Poppins-Bold;
+}
+
+.javascr {
+    /* text-align: center; */
+    /* width: 80%; */
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: red;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.toast-body{
+    background-color: #f3ead4;
+    font-family: Poppins-Bold;
+    
 }

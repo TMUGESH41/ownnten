@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CREATEACC</title>
     <link rel="stylesheet" href="./css/createacc.css">
+    <script src="./js/createacc.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container1">
 
         <div class="header">
             <div class="topic">
@@ -26,29 +29,84 @@
 
         <div class="login">
             <h1 class="h1">Create your</h1>
-            <h1 class="h2"  style="font-weight: bold;"> Rento Account.</h1>
+            <h1 class="h2" style="font-weight: bold;margin-bottom: 40px;"> Rento Account.</h1>
 
             <form>
                 <div class="lineh">
-                <label>Full Name</label><BR>
-                <input type="text"><br><br></div>
+                    <label>Full Name</label><br>
+                    <input type="text" id="fullname"><br>
+                    <div class="javascr">
+                        <p id="fullnameerror"></p>
+                    </div>
+                </div>
                 <div class="lineh">
-                <label>Email </label><br>
-                <input type="email"><br><br></div>
+                    <label>Email </label><br>
+                    <input type="email" id="email"><br>
+                    <div class="javascr">
+                        <p id="emailError"></p>
+                    </div>
+                </div>
                 <div class="lineh" id="input1">
-                <label>Password </label><br>
-                <input type="password" class="re"><img src="./image/eye.png" class="ab"><br><br></div>
+                    <label>Password </label><br>
+                    <input type="password" class="re" id="password"><img src="./image/eye.png" class="ab"><br>
+                    <div class="javascr">
+                        <p id="passwordError"></p>
+                    </div>
+                </div>
                 <div class="lineh" id="input2">
-                <label>Confirm Password </label><br>
-                <input type="password" class="re"><img src="./image/eye-closed.png" class="abb"></div>
+                    <label>Confirm Password </label><br>
+                    <input type="password" class="re" id="confirmpassword"><img src="./image/eye-closed.png"
+                        class="abb">
+                    <div class="javascr">
+                        <p id="ConfirmError"></p>
+                    </div>
+                </div>
             </form>
             <div class="last">
-                <a class="ac" href="manage.html">SIGN UP</a>
+                <!-- <button class="ac" onclick="validateForm()">SIGN UP</button> -->
 
-                <p>Already have an account? <a class="lo" href="loginpage.html">LOGIN</a></p>
+
+                <button type="button" class="ac" id="liveToastBtn" onclick=" validateForm()">SIGN UP</button>
+                <div aria-live="polite" aria-atomic="true" class="position-relative">
+
+                    <div class="toast-container position-absolute top-0 end-0 p-3">
+                        <div class="position-fixed top-0 start-0 p-3" style="z-index: 11">
+                            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
+                                aria-atomic="true">
+                                <!-- <div class="toast-header text-black">
+                                   <strong class="me-auto">hi</strong>
+                                    <small>just now</small>
+                                  </div> -->
+
+                                <div class="toast-body text-black text-black">
+                                    Success
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Already have an account? <a class="lo" href="loginpage.html">LOGIN</a></p>
+
+                    <!-- <div class="javascr">
+                    <p id="emailError"></p>
+                </div>
+                <div class="javascr">
+                    <p id="passwordError"></p>
+                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+      
+
+    
+          
+          
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

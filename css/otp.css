@@ -72,14 +72,14 @@
     font-size: 45px;
 }
 
-.container {
+.container1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
+    .container1 {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -134,17 +134,17 @@ button {
     width: 100%;
     /* height: 40px; */
     border: none;
-    border-radius: 40px;
+    border-radius: 41px !important;
     cursor: pointer;
-    padding: 15px 20%;
+    padding: 0px;
 }
 
 .last {
     text-align: center;
     line-height: 3rem;
-    padding-top: 30px;
+    padding-top: 15px;
     font-family: 'Poppins', sans-serif;
-    width: 72%;
+    width: 69%;
 }
 
 @media (max-width: 768px) {
@@ -252,9 +252,9 @@ button {
 
 
 a {
-    color: #772360;
-    cursor: pointer;
-    text-decoration: none;
+    color: #772360 !important;
+    cursor: pointer  !important;
+    text-decoration: none  !important;
 }
 
 .para {
@@ -305,12 +305,28 @@ label{
 
 
 .last p {
-    font-size: 14px;
-    color: #666666;
-    text-align: center;
-    font-family: Poppins-Regular;
+    font-size: 14px !important;
+    color: #666666 !important;
+    text-align: center !important;
+    font-family: Poppins-Regular !important;
 }
 
 .aa{
     font-family: Poppins-Bold;
+}
+
+.javascr {
+    /* text-align: center; */
+    /* width: 80%; */
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: red;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.toast-body{
+    background-color: #f3ead4;
+    font-family: Poppins-Bold;
+    
 }

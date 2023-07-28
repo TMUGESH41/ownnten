@@ -24,10 +24,10 @@
 }
 
 .nav {
-    padding: 40px 0px 0px 30px;
+    padding: 25px 0px 0px 30px;
     background-color: #f3ead4;
-    height: 50px;
-    width: 198px;
+    /* height: 50px; */
+    width: 240px;
     /* padding: 10px 10px; */
     object-fit: none;
 }
@@ -98,14 +98,14 @@ nav {
     font-family: Poppins-SemiBold;
 }
 
-.container {
+.container1 {
     background-color: white;
     position: relative;
     height: 100vh;
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         background-color: #f2ebdc;
         position: relative;
         height: 100vh;
@@ -124,7 +124,7 @@ nav {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
+    .container1 {
         background-color: #f2ebdc;
         position: relative;
         height: 100vh;
@@ -133,7 +133,7 @@ nav {
 
 .log .img {
     /* position: relative; */
-    padding-top: 62px;
+    /* padding-top: 62px; */
     width: 100%;
     display: flex;
     height: 70vh;
@@ -172,7 +172,7 @@ nav {
 .left {
     line-height: 40px;
     /* padding: 51px 120px 20px 20px; */
-    font-family: 'Poppins', sans-serif;
+  
     display: flex;
     flex-direction: column;
     justify-content: normal;
@@ -184,7 +184,7 @@ nav {
     .left {
         line-height: 40px;
         padding: 0px;
-        font-family: 'Poppins', sans-serif;
+      
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -199,7 +199,7 @@ form {
     padding-top: 50px;
     font-size: 15PX;
     color: #999999;
-    font-family: 'Poppins', sans-serif;
+  
     width: 70%;
 }
 
@@ -207,7 +207,7 @@ form {
     .left {
         line-height: 40px;
         padding: 60px;
-        font-family: 'Poppins', sans-serif;
+      
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -221,7 +221,7 @@ form {
         padding-top: 40px;
         font-size: 15PX;
         color: #999999;
-        font-family: 'Poppins', sans-serif;
+      
         width: 100%;
     }
 }
@@ -276,7 +276,7 @@ button {
     flex-direction: column;
     /* line-height: 7rem; */
     border: none;
-    width: 65%;
+    width: 62%;
 }
 
 
@@ -290,6 +290,7 @@ button {
     font-weight: bold;
     font-size: 14px;
     font-family: Poppins-Bold;
+    border: none;
 }
 
 @media (max-width: 768px) {
@@ -376,6 +377,14 @@ font-weight: bold;
 font-family: Poppins-Bold;
 }
 
+.ab:hover{
+    color: #772360;
+}
+
+.pp a{
+    color: black !important;
+}
+
 @media (max-width: 768px) {
 
     .go {
@@ -423,7 +432,7 @@ font-family: Poppins-Bold;
         padding-top: 50px;
         font-size: 15PX;
         color: #999999;
-        font-family: 'Poppins', sans-serif;
+       
         width: 100%;
     }
 }
@@ -492,4 +501,24 @@ font-family: Poppins-Bold;
 
 .line-h {
     line-height: 10px;
+}
+
+.javascr {
+    /* text-align: center; */
+    /* width: 80%; */
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: red;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.toast-header{
+    background-color: #f3ead4;
+}
+
+.toast-body{
+    background-color: #f3ead4;
+    font-family: Poppins-Bold;
+    
 }
