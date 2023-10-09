@@ -99,28 +99,25 @@
                             <!-- <div class="col-6 pt-5 pb-5" id="border1"> -->
                             <p class="top">Upload KYC Document</p>
                             <hr>
+                            <div class="uploadimg">
+                                <img id="output_image">
+                            </div>
                             <div class="para1">
-
-
                                 <label for="file" style="cursor: pointer">
-                                    <span id="file-text" class="button">Drag
+                                    <label for="file" class="button">Drag
                                         'n' Drop
                                         Document here Or Click to
-                                        Select Document</span>
+                                        Select Document</label>
                                 </label>
 
-                                <input type="file" id="file"
-                                    onchange="document.getElementById('file-text').textContent = this.files.length > 0 ? this.files[0].name : 'Select a file'"
-                                    style="display: none" />
-
-
-
+                                <input type="file" id="file" accept="image/*" onchange="preview_image(event)"
+                                    style="display: none;">
 
 
                             </div>
                             <span class="top1">Property Type*</span>
                             <div class="property">
-                              
+
                                 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5  row-cols-sm-2 g-2 g-md-1">
                                     <div class="col p-1">
                                         <div class="bor">Aadhar Card</div>

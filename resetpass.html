@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <script src="./js/reset.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -38,11 +38,10 @@
             <div class="last">
                 <!-- <button class="res" onclick=" validateForm()">RESET PASSWORD</button> -->
 
-                
-                <button type="button" class="res" id="liveToastBtn"
-                onclick=" validateForm()">RESET PASSWORD</button>
+
+                <button type="button" class="res" id="liveToastBtn" onclick=" validateForm()">RESET PASSWORD</button>
                 <div aria-live="polite" aria-atomic="true" class="position-relative">
-     
+
                     <div class="toast-container position-absolute top-0 end-0 p-3">
                         <div class="position-fixed top-0 start-0 p-3" style="z-index: 11">
                             <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
@@ -58,27 +57,27 @@
                             </div>
                         </div>
                     </div>
-    </div>
+                </div>
 
 
                 <p>Return to <a style="color: #772360;font-weight: bold;" href="loginpage.html" class="aa">LOGIN</a></p>
             </div>
         </div>
+    </div>
+    <!-- <script>
+        // Function to show the toast message
+        function showToast() {
+            var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+            toast.show();
+        }
 
-        <script>
-            // Function to show the toast message
-            function showToast() {
-                var toast = new bootstrap.Toast(document.getElementById('liveToast'));
-                toast.show();
-            }
+        // Add an event listener to the LOGIN button
+        document.getElementById('liveToastBtn').addEventListener('click', showToast);
+    </script> -->
 
-            // Add an event listener to the LOGIN button
-            document.getElementById('liveToastBtn').addEventListener('click', showToast);
-        </script>
-
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
